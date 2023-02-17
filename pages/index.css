@@ -1,0 +1,7 @@
+@import url('../vendor/normalize.css');
+@import url('../vendor/fonts.css');
+
+.page {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+}
