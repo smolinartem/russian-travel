@@ -5,7 +5,7 @@
 /*! ----PAGE---- */
 @import url('../blocks/page/page.css');
 /*! ----LIST-RESET---- */
-@import url('../blocks/list-reset/list-reset.css');
+@import url('../blocks/list/list.css');
 /*! ----LINK-HOVER---- */
 @import url('../blocks/link-hover/link-hover.css');
 /*! ----HEADER---- */
