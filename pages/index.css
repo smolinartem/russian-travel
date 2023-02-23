@@ -1,222 +1,55 @@
 @import url('../vendor/normalize.css');
-@import url('../vendor/fonts.css');
-
-.page {
-  font-family: 'Inter', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  text-rendering: optimizeLegibility;
-  background-color: #2a2c2f;
-  color: #fff;
-}
-
-.list-reset {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
+@import url('../vendor/fonts/fonts.css');
+/*! ----VARS---- */
+@import url('../vendor/vars.css');
+/*! ----PAGE---- */
+@import url('../blocks/page/page.css');
+/*! ----LIST-RESET---- */
+@import url('../blocks/list-reset/list-reset.css');
+/*! ----LINK-HOVER---- */
+@import url('../blocks/link-hover/link-hover.css');
 /*! ----HEADER---- */
-.header {
-  max-width: 1184px;
-  margin: 0 auto;
-  padding: 28px 48px 56px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.header__logo {
-  display: block;
-  width: 176px;
-  height: 52px;
-  background-image: url('../images/icons/logo.svg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.header__lang {
-  display: flex;
-  gap: 18px;
-}
-
-.header__lang-link {
-  font-size: 24px;
-  line-height: 28px;
-  padding-bottom: 6px;
-}
-.header__lang-link.active {
-  text-decoration: underline;
-}
-
+@import url('../blocks/header/header.css');
+@import url('../blocks/header/__logo/header__logo.css');
+@import url('../blocks/header/__lang/header__lang.css');
+@import url('../blocks/header/__lang-link/header__lang-link.css');
 /*! ----LEAD---- */
-
-.lead {
-  max-width: 984px;
-  margin: 0 auto;
-  padding: 0 48px 92px;
-}
-.lead__title {
-  margin: 0 auto;
-  padding: 0;
-  font-weight: 900;
-  font-size: 96px;
-  line-height: 104%;
-  text-align: center;
-  max-width: 720px;
-}
-.lead__subtitle {
-  margin: 0 auto;
-  margin-top: 32px;
-  padding: 0 24px;
-  font-size: 30px;
-  line-height: 120%;
-  text-align: center;
-  max-width: 640px;
-}
-.lead__img {
-  margin-top: 64px;
-  width: 100%;
-}
-.lead__caption {
-  margin: 0;
-  margin-top: 8px;
-  padding: 0;
-  font-size: 10px;
-  line-height: 140%;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-}
-
+@import url('../blocks/lead/lead.css');
+@import url('../blocks/lead/__title/lead__title.css');
+@import url('../blocks/lead/__subtitle/lead__subtitle.css');
+@import url('../blocks/lead/__figure/lead__figure.css');
+@import url('../blocks/lead/__img/lead__img.css');
+@import url('../blocks/lead/__caption/lead__caption.css');
 /*! ----INTRO---- */
-.intro {
-  max-width: 984px;
-  margin: 0 auto;
-  padding: 0 48px 92px;
-}
-.intro__content {
-  max-width: 690px;
-}
-.intro__title {
-  margin: 0;
-  padding: 0;
-  font-weight: 900;
-  font-size: 54px;
-  line-height: 107%;
-}
-.intro__text {
-  margin: 0;
-  margin-top: 40px;
-  padding: 0;
-  font-size: 16px;
-  line-height: 163%;
-}
-.intro__list {
-  margin-top: 33px;
-}
-.intro__item {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 150%;
-}
-.intro__num {
-  margin-left: 4px;
-  font-weight: 400;
-}
-
+@import url('../blocks/intro/intro.css');
+@import url('../blocks/intro/__text/intro__text.css');
+@import url('../blocks/intro/__list/intro__list.css');
+@import url('../blocks/intro/__item/intro__item.css');
+@import url('../blocks/intro/__num/intro__num.css');
 /*! ----GALLERY---- */
-.gallery {
-  max-width: 1184px;
-  margin: 0 auto;
-  padding: 0 48px 92px;
-}
-.gallery__list {
-  display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(auto-fit, minmax(284px, max-content));
-}
-.gallery__image {
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-/*! ----MEDIA---- */
-@media screen and (max-width: 768px) {
-  .header {
-    padding: 28px 24px 48px;
-  }
-  .lead {
-    padding: 0 0 88px;
-  }
-  .lead__title {
-    padding: 0 24px;
-  }
-  .lead__img {
-    margin-top: 56px;
-  }
-  .lead__caption {
-    padding-left: 24px;
-  }
-  .intro {
-    padding: 0 24px 88px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .lead__title {
-    font-size: 56px;
-    max-width: 470px;
-  }
-  .lead__subtitle {
-    font-size: 22px;
-  }
-  .lead__img {
-    margin-top: 50px;
-  }
-}
-@media screen and (max-width: 440px) {
-  .header__logo {
-    width: 142px;
-    height: 42px;
-  }
-  .header__lang-link {
-    font-size: 18px;
-    line-height: 20px;
-  }
-  .lead__title {
-    padding: 0 16px;
-    font-size: 40px;
-    line-height: 140%;
-    max-width: 330px;
-  }
-  .lead__subtitle {
-    padding: 0 16px;
-    margin-top: 16px;
-    font-size: 16px;
-    line-height: 125%;
-  }
-  .intro__title {
-    font-size: 32px;
-    line-height: 109%;
-  }
-}
-@media screen and (max-width: 320px) {
-  .header {
-    padding: 16px 16px 48px;
-  }
-  .lead {
-    padding: 0 0 64px;
-  }
-  .lead__img {
-    margin-top: 40px;
-  }
-  .lead__caption {
-    padding-left: 16px;
-  }
-}
+@import url('../blocks/gallery/gallery.css');
+@import url('../blocks/gallery/__list/gallery__list.css');
+@import url('../blocks/gallery/__image/gallery__image.css');
+/*! ----PLACES---- */
+@import url('../blocks/places/places.css');
+/*! ----PLACE---- */
+@import url('../blocks/place/place.css');
+@import url('../blocks/place/__title/place__title.css');
+@import url('../blocks/place/__website/place__website.css');
+@import url('../blocks/place/__url-heading/place__url-heading.css');
+@import url('../blocks/place/__link/place__link.css');
+@import url('../blocks/place/__image/place__image.css');
+@import url('../blocks/place/__pharagraphs/place__pharagraphs.css');
+@import url('../blocks/place/__paragraph/place__paragraph.css');
+/*! ----COVER---- */
+@import url('../blocks/cover/cover.css');
+@import url('../blocks/cover/__link/cover__link.css');
+@import url('../blocks/cover/__image/cover__image.css');
+@import url('../blocks/cover/__content/cover__content.css');
+@import url('../blocks/cover/__title/cover__title.css');
+@import url('../blocks/cover/__subtitle/cover__subtitle.css');
+/*! ----FOOTER---- */
+@import url('../blocks/footer/footer.css');
+@import url('../blocks/footer/__nav/footer__nav.css');
+@import url('../blocks/footer/__link/footer__link.css');
+@import url('../blocks/footer/__copyright/footer__copyright.css');

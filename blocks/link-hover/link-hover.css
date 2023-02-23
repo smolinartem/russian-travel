@@ -1,0 +1,6 @@
+.link-hover {
+  transition: color 0.2s ease-in;
+}
+.link-hover:hover {
+  color: #aaa;
+}

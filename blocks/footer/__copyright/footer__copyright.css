@@ -1,0 +1,18 @@
+.footer__copyright {
+  margin: 0;
+  font-size: 14px;
+  line-height: 114%;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.footer__copyright:hover {
+  transform: translateX(-8px);
+  color: rgb(141, 237, 173);
+}
+@media screen and (max-width: 720px) {
+  .footer__copyright {
+    font-size: 14px;
+    line-height: 1;
+  }
+}

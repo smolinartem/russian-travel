@@ -1,0 +1,13 @@
+:root {
+  --section-padding: 92px;
+}
+@media screen and (max-width: 768px) {
+  :root {
+    --section-padding: 88px;
+  }
+}
+@media screen and (max-width: 440px) {
+  :root {
+    --section-padding: 64px;
+  }
+}
