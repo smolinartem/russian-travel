@@ -1,5 +1,6 @@
 :root {
   --section-padding: 92px;
+  --main-color: #2a2c2f;
 }
 @media screen and (max-width: 768px) {
   :root {

@@ -2,7 +2,7 @@
   font-family: 'Inter', sans-serif;
   font-size: 18px;
   font-weight: 400;
-  background-color: #2a2c2f;
+  background-color: var(--main-color);
   color: #fff;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
